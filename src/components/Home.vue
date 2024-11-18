@@ -5,10 +5,20 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
 
 <template>
   <primary-template>
-    <h1>This is my homepage</h1>
+    <div class="main-homepage">
+    </div>
   </primary-template>
 </template>
 
 <style scoped>
+
+.main-homepage {
+
+  min-height: 300vh;
+  background-image: url("../assets/mainpic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 </style>

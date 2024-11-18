@@ -5,10 +5,19 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 
 <template>
   <primary-template>
-    <h1>This is where I'll show all the products I sell!</h1>
+    <div class="details">
+      <img src="../../assets/jacket.png" alt=""/>
+      <img src="../../assets/jacket-2.png" alt=""/>
+      <img src="../../assets/Jacket-3.png" alt=""/>
+    </div>
   </primary-template>
 </template>
 
 <style scoped>
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 </style>

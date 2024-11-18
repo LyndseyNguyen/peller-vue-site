@@ -1,17 +1,18 @@
 <script setup>
 
 import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
-import productData from '../../MOCK_DATA.js'
+import productData from '../../MOCK_DATA .js'
 </script>
 
 <template>
   <primary-template>
-    <h1>This is where I'll show all the products I sell!</h1>
 
     <div class="products">
 
       <div class="product" v-for="(product, index) in productData.data" :key="index">
-        {{ product.first_name }} {{ product.last_name }}
+        product image here!!
+        <div class="product-name">{{ product.name }}</div>
+        <div class="product-price">{{ product.price }}</div>
       </div>
 
     </div>
@@ -20,20 +21,24 @@ import productData from '../../MOCK_DATA.js'
 </template>
 <div class="logo">
 
-
 </div>
 
 <style scoped>
 .products {
-  font-size: 2rem;
+  font-size: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
+  padding: 0 1rem;
+  justify-content: space-between;
 
   .product {
-    border: 1px solid #ddd;
-    font-weight: bold;
-    min-width: 300px;
+    border: 1px solid black;
+    font-weight: bolder;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 </style>
