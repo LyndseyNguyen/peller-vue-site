@@ -2,6 +2,14 @@
 
 import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 import productData from '../../MOCK_DATA .js'
+
+export default {
+  props: [
+      'name',
+      'price',
+      'photo'
+  ]
+}
 </script>
 
 <template>
@@ -10,7 +18,7 @@ import productData from '../../MOCK_DATA .js'
     <div class="products">
 
       <div class="product" v-for="(product, index) in productData.data" :key="index">
-        <div class="image-size"><img alt src="../../assets/zip-up.jpg"/></div>
+        <img alt :src="'../../src/assets/' + photo">
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }}</div>
       </div>

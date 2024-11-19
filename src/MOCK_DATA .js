@@ -3,13 +3,13 @@ const data =[
     "id": null,
     "name": "Vale",
     "price": "$196",
-    "photo": 'product_image_name.jg'
+    "photo": "zip-up.jpg"
   },
   {
     "id": null,
     "name": "Chester",
     "price": "$210",
-    "photo": 'product_image_name.jg'
+    "photo": 'jacket.png'
 
   },
   {
