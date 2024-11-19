@@ -1,0 +1,40 @@
+const data =[
+  {
+    "id": 1,
+    "first_name": "Estell",
+    "last_name": "Rudyard",
+    "price": "$180.17"
+  },
+  {
+    "id": 2,
+    "first_name": "Porty",
+    "last_name": "Rocco",
+    "price": "$125.92"
+  },
+  {
+    "id": 3,
+    "first_name": "Francis",
+    "last_name": "Fynan",
+    "price": "$95.36"
+  },
+  {
+    "id": 4,
+    "first_name": "Flossy",
+    "last_name": "Yarnall",
+    "price": "$80.57"
+  },
+  {
+    "id": 5,
+    "first_name": "Rafi",
+    "last_name": "Papis",
+    "price": "$147.34"
+  },
+  {
+    "id": 6,
+    "first_name": "Madelyn",
+    "last_name": "Everitt",
+    "price": "$131.39"
+  }
+]
+
+export defualt { data }

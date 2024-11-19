@@ -1,0 +1,35 @@
+<script setup>
+
+import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
+</script>
+
+<template>
+  <primary-template>
+    <div class="main-homepage">
+      <div class="shop-link">
+      <router-link :to="{name:'category'}" >Shop Here</router-link>
+      </div>
+    </div>
+  </primary-template>
+</template>
+
+<style scoped>
+
+.main-homepage {
+  min-height: 300vh;
+  background-image: url("../assets/mainpic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.shop-link {
+  font-size: 30px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+</style>
