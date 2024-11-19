@@ -23,7 +23,7 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
   background-position: center;
 }
 .shop-link {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: normal;
   display: flex;
   justify-content: center;

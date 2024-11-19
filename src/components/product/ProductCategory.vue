@@ -10,11 +10,11 @@ import productData from '../../MOCK_DATA .js'
     <div class="products">
 
       <div class="product" v-for="(product, index) in productData.data" :key="index">
-        product image here!!
+        <div class="image-size"><img alt src="../../assets/zip-up.jpg"/></div>
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }}</div>
-
       </div>
+
     </div>
 
   </primary-template>
@@ -31,20 +31,24 @@ import productData from '../../MOCK_DATA .js'
   justify-content: space-between;
 
   .product {
-    border: 1px solid black;
-    font-weight: bolder;
+    border: black solid 1px;
     min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .product-name {
-      font-size: 20px;
+      font-size: 30px;
       font-weight: normal;
-    }
     .product-price {
       font-size: 13px;
       font-weight: lighter;
+      .image-size {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+      }
+      }
     }
   }
 }
