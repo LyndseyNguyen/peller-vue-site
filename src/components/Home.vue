@@ -24,12 +24,13 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
 }
 .shop-link {
   font-size: 40px;
-  font-weight: normal;
+  font-weight: lighter;
   display: flex;
   justify-content: center;
   color: white;
-  text-decoration: underline;
+  text-decoration: underline 1px;
   text-underline-position: under;
+
 }
 
 </style>

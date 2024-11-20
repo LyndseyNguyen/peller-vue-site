@@ -103,6 +103,12 @@ section.primary-template {
       nav {
         display: flex;
         justify-content: center;
+  /* Desktop */
+  @media screen and (width > 1000px) {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+        }
       }
     }
   }

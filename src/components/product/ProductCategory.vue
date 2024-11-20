@@ -3,26 +3,18 @@
 import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 import productData from '../../MOCK_DATA .js'
 
-export default {
-  props: [
-      'name',
-      'price',
-      'photo'
-  ]
-}
+
 </script>
 
 <template>
   <primary-template>
 
     <div class="products">
-
       <div class="product" v-for="(product, index) in productData.data" :key="index">
-        <img alt :src="'../../src/assets/' + photo">
+        <div class="product-photo"> <img alt :src="'../../src/assets/' + product.photo"></div>
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }}</div>
       </div>
-
     </div>
 
   </primary-template>
@@ -48,13 +40,18 @@ export default {
     .product-name {
       font-size: 30px;
       font-weight: normal;
+      display: flex;
+      flex-direction: column;
     .product-price {
       font-size: 13px;
       font-weight: lighter;
-      .image-size {
-        display: flex;
-        padding: 0;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+
+      .product-photo {
+        height: fit-content;
+        object-fit: scale-down;
+
       }
       }
     }

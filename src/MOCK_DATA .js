@@ -1,76 +1,75 @@
 const data =[
   {
     "id": null,
-    "name": "Vale",
+    "name": "Workers Collar",
     "price": "$196",
     "photo": "zip-up.jpg"
   },
   {
     "id": null,
-    "name": "Chester",
+    "name": "Workers Jacket",
     "price": "$210",
-    "photo": 'jacket.png'
-
+    "photo": "jacket.png"
   },
   {
     "id": null,
-    "name": "Jedd",
-    "price": "$196",
-    "photo": 'product_image_name.jg'
+    "name": "Workers Quarter",
+    "price": "$120",
+    "photo": "quarter-zip.jpg"
   },
   {
     "id": null,
-    "name": "Franny",
+    "name": "Workers Bomber",
     "price": "$233",
-    "photo": 'product_image_name.jg'
+    "photo": "bomber-jacket.jpg"
   },
   {
     "id": null,
-    "name": "Ealasaid",
+    "name": "Workers Jean",
     "price": "$150",
-    "photo": 'product_image_name.jg'
+    "photo": "jeans"
   },
   {
     "id": null,
-    "name": "Antonetta",
+    "name": "Workers Hat",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Lowe",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Mar",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Barbette",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Clovis",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Barbette",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   },
   {
     "id": null,
     "name": "Clovis",
     "price": "$70",
-    "photo": 'product_image_name.jg'
+    "photo": "product_image_name.jg"
   }
 ]
 
