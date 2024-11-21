@@ -27,19 +27,19 @@ const data =[
     "id": null,
     "name": "Workers Jean",
     "price": "$150",
-    "photo": "jeans"
+    "photo": "jeans.jpg"
   },
   {
     "id": null,
     "name": "Workers Hat",
     "price": "$70",
-    "photo": "product_image_name.jg"
+    "photo": "cap-2.jpg"
   },
   {
     "id": null,
     "name": "Lowe",
     "price": "$70",
-    "photo": "product_image_name.jg"
+    "photo": "IMG_4147.png"
   },
   {
     "id": null,

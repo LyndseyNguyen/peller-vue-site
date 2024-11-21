@@ -31,7 +31,6 @@ import productData from '../../MOCK_DATA .js'
   justify-content: space-between;
 
   .product {
-    border: black solid 1px;
     min-width: 400px;
     display: flex;
     flex-direction: column;
