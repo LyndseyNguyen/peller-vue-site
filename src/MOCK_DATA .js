@@ -27,7 +27,7 @@ const data =[
     "id": null,
     "name": "Workers Jean",
     "price": "$150",
-    "photo": "jeans.jpg"
+    "photo": "jeans-2.png"
   },
   {
     "id": null,
