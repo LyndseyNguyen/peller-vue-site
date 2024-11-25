@@ -45,31 +45,25 @@ const data =[
     "id": null,
     "name": "Mar",
     "price": "$70",
-    "photo": "product_image_name.jg"
+    "photo": "IMG_4148.png"
   },
   {
     "id": null,
     "name": "Barbette",
     "price": "$70",
-    "photo": "product_image_name.jg"
+    "photo": "IMG_4150.png"
+  },
+  {
+    "id": null,
+    "name": "Bob",
+    "price": "$70",
+    "photo": "IMG_4151.png"
   },
   {
     "id": null,
     "name": "Clovis",
     "price": "$70",
-    "photo": "product_image_name.jg"
-  },
-  {
-    "id": null,
-    "name": "Barbette",
-    "price": "$70",
-    "photo": "product_image_name.jg"
-  },
-  {
-    "id": null,
-    "name": "Clovis",
-    "price": "$70",
-    "photo": "product_image_name.jg"
+    "photo": "IMG_4152.png"
   }
 ]
 

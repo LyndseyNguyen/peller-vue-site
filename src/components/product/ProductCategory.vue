@@ -37,7 +37,7 @@ import productData from '../../MOCK_DATA .js'
     justify-content: center;
 
     .product-name {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: normal;
       display: flex;
       flex-direction: column;
@@ -51,7 +51,7 @@ import productData from '../../MOCK_DATA .js'
         height: fit-content;
         object-fit: scale-down;
 
-      }
+        }
       }
     }
   }
