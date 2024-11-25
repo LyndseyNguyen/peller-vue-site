@@ -21,16 +21,17 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+
 .shop-link {
   font-size: 40px;
   font-weight: lighter;
-  display: flex;
-  justify-content: center;
+  //display: flex;
+  //justify-content: center;
+
   color: white;
   text-decoration: underline 1px;
   text-underline-position: under;
-
+  }
 }
 
 </style>

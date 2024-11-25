@@ -11,7 +11,7 @@ import productData from '../../MOCK_DATA .js'
 
     <div class="products">
       <div class="product" v-for="(product, index) in productData.data" :key="index">
-        <div class="product-photo"> <img alt :src="'../../src/assets/' + product.photo"></div>
+        <div class="product-photo"><img alt :src="'../../src/assets/' + product.photo"></div>
         <div class="product-name">{{ product.name }}</div>
         <div class="product-price">{{ product.price }}</div>
       </div>
@@ -22,16 +22,19 @@ import productData from '../../MOCK_DATA .js'
 
 
 <style scoped>
+/* Mobile first */
 .products {
   font-size: 15px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 5rem;
   padding: 0 1rem;
-  justify-content: space-between;
+  //justify-content: space-between;
 
   .product {
-    min-width: 400px;
+    border: 1px solid #ccc;
+    //min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,21 +42,37 @@ import productData from '../../MOCK_DATA .js'
     .product-name {
       font-size: 25px;
       font-weight: normal;
-      display: flex;
-      flex-direction: column;
+      //display: flex;
+      //flex-direction: column;
+    }
+
     .product-price {
       font-size: 13px;
       font-weight: lighter;
-      display: flex;
-      justify-content: center;
+      //display: flex;
+      //justify-content: center;
+    }
 
-      .product-photo {
-        height: fit-content;
-        object-fit: scale-down;
+    .product-photo {
+      height: fit-content;
+      object-fit: scale-down;
 
-        }
+      img {
+        width: 100%;
       }
+
+    }
+  }
+
+  /* Tablet and up */
+  @media screen and (width > 600px) {
+    /* Remember, this is for .products class */
+    flex-direction: row;
+
+    .product {
+      max-width: 25%;
     }
   }
 }
+
 </style>

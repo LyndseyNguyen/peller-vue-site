@@ -6,7 +6,9 @@
 <template>
   <section class="primary-template">
     <header>
-      <div class="logo"><router-link :to="{name:'home'}" ><img alt src="../assets/peller-logocopy.png"></router-link></div>
+      <div class="logo">
+        <router-link :to="{name:'home'}"><img alt src="../assets/peller-logocopy.png"></router-link>
+      </div>
 
       <nav>
         <a href="#">
@@ -69,7 +71,7 @@ section.primary-template {
     justify-content: space-between;
 
     .logo {
-      img{
+      img {
         width: 11rem;
       }
     }
@@ -103,11 +105,11 @@ section.primary-template {
       nav {
         display: flex;
         justify-content: center;
-  /* Desktop */
-  @media screen and (width > 1000px) {
-    gap: 1rem;
-    display: flex;
-    flex-direction: row;
+        /* Desktop */
+        @media screen and (width > 1000px) {
+          gap: 1rem;
+          display: flex;
+          flex-direction: row;
         }
       }
     }
