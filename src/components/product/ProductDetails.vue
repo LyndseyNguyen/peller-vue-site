@@ -24,7 +24,7 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
     <section class="main">
       <!--      <pre>Workers Jacket</pre>-->
       <div class="images" v-if="product.extraPhotos">
-        <img v-for="(extraPhoto, index) in product.extraPhotos" :src="'../../src/assets/' + extraPhoto" alt="" />
+        <img v-for="(extraPhoto,) in product.extraPhotos" :src="'../../src/assets/' + extraPhoto" alt="" />
       </div>
 
       <div class="product-information">
