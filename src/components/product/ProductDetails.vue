@@ -22,23 +22,19 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 <template>
   <primary-template>
     <section class="main">
-<!--      <pre>Workers Jacket</pre>-->
-      <div class="details">
-        <router-link :to="{name:'zoom'}">
-          <img src="../../assets/jacket.png" alt=""/>
-        </router-link>
-        <router-link :to="{name:'zoom'}">
-          <img src="../../assets/jacket-2.png" alt=""/>
-        </router-link>
-        <router-link :to="{name:'zoom'}">
-          <img src="../../assets/Jacket-3.png" alt=""/>
-        </router-link>
+      <!--      <pre>Workers Jacket</pre>-->
+      <div class="images" v-if="product.extraPhotos">
+        <img v-for="(extraPhoto, index) in product.extraPhotos" :src="'../../src/assets/' + extraPhoto" alt="" />
       </div>
 
       <div class="product-information">
         <h1>{{ product.name }}</h1>
-        <a href="#">{{product.sizes}}</a>
-        <p>{{product.description}}</p>
+        <a href="#">{{ product.sizes }}</a>
+
+        <p>
+          <img :src="'../../src/assets/' + product.photo" :alt="product.name"/>
+          {{ product.description }}
+        </p>
       </div>
 
 
@@ -47,54 +43,73 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 </template>
 
 <style scoped>
-.main{
+/* Mobile first layout */
+.main {
   padding: 2rem;
   display: flex;
-  flex-direction: row;
-}
-
-.product-information {
-  text-align: left;
-  display: flex;
   flex-direction: column;
-  //margin: 0 10rem;
-  //max-width: 10px;
+  gap: 2rem;
+  //position: relative;
 
-  h1 {
-    padding: 0 3rem 0;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  p {
-    text-align: left;
-    padding: 0 3rem 0;
-  }
-  a {
-    text-align: left;
-    padding: 0 3rem 0;
-    text-decoration: none;
-    font-weight: bold;
-
-  }
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  //border: 1px solid #ccc;
-  gap: 1rem;
-}
-
-/* Tablet and up */
-@media screen and (width > 600px) {
-  /* Remember, this is for .products class */
-  background-color: #bd60ad;
-  .product-information {
-    text-align: right;
+  .images {
     display: flex;
     flex-direction: column;
+    //border: 1px solid #ccc;
+    gap: 1rem;
+    //height: 100vh;
+    overflow: scroll;
+    flex-basis: 40%;
 
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-information {
+    //position: sticky;
+    //top: 0;
+    text-align: left;
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+    //margin: 0 10rem;
+    //max-width: 10px;
+
+    h1 {
+      padding: 0 3rem 0;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 40%;
+      float: right;
+      margin: 0 0 1rem 1rem;
+    }
+
+    p {
+      text-align: left;
+      padding: 0 3rem 0;
+    }
+
+    a {
+      text-align: left;
+      padding: 0 3rem 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  /* Tablet and up */
+  @media screen and (width > 600px) {
+    /* Remember, this is for .products class */
+    flex-direction: row;
+
+    .product-information {
+      p {
+        text-align: right;
+      }
+    }
   }
 }
-
 </style>

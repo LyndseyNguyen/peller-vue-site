@@ -10,7 +10,11 @@ const data = [
             "printed logo. The jacket has a pointed collar, one vertical chest\n" +
             "pocket on the left, and two slanted side pockets near the waist.\n" +
             "The sleeves have adjustable cuffs with a single button each. The\n" +
-            "overall look is minimal and utilitarian."
+            "overall look is minimal and utilitarian.",
+        "extraPhotos": [
+            "collar2.jpg",
+            "collar3.jpg"
+        ]
     },
     {
         "id": "2",
@@ -24,7 +28,11 @@ const data = [
             "printed logo. The jacket has a pointed collar, one vertical chest\n" +
             "pocket on the left, and two slanted side pockets near the waist.\n" +
             "The sleeves have adjustable cuffs with a single button each. The\n" +
-            "overall look is minimal and utilitarian."
+            "overall look is minimal and utilitarian.",
+        "extraPhotos": [
+            'jacket-2.png',
+            'jacket-3.png'
+        ]
     },
     {
         "id": "3",
