@@ -9,7 +9,6 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
       <img src="../../assets/jacket.png" alt=""/>
       <img src="../../assets/jacket-2.png" alt=""/>
       <img src="../../assets/Jacket-3.png" alt=""/>
-
     </div>
 
   </primary-template>
@@ -18,11 +17,17 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 <style scoped>
   .zoom {
     display: flex;
-    flex-direction: column;
-    //width: 50%;
     align-items: center;
-    padding: 2rem;
-    //margin: 13rem 0;
-    //width: 300px; /* Set initial size */
+    justify-content: center;
+    gap: 3rem;
+    //padding: 2rem;
+    width: 100%;
+    margin: 0 0 1rem 1rem;
+    height: 100%;
+    object-fit: cover; /* Adjust image to fit container */
+    //transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  img :hover {
+    transform: scale(1.2); /* Zoom in effect */
   }
 </style>

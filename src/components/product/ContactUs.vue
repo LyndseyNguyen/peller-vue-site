@@ -23,6 +23,11 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 
         <button type="submit">Submit</button>
       </form>
+<!--        <div class="contact-img">-->
+<!--          <img src="../../assets/main-img.jpg" alt="">-->
+<!--          <img src="../../assets/main-img.jpg" alt="">-->
+<!--          <img src="../../assets/main-img.jpg" alt="">-->
+<!--        </div>-->
 
       </div>
 
@@ -37,24 +42,26 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
 .contact-us {
   padding: 17rem;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  //max-width: min-content;
   font-weight: bold;
   color: white;
+  flex-wrap: wrap;
+
   background-image: url("../../assets/main-img.jpg"), url("../../assets/main-img3.jpg"), url("../../assets/main-img2.jpg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left center, center, right center;
+  //background-repeat: no-repeat, no-repeat, no-repeat;
+  //background-position: left center, center, right center;
+  width: 71.7%;
+  background-size: cover;
+  //align-items: center;
+  //justify-content: center;
 
   form {
-    display: flex;
+    //display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    //justify-content: center;
+    //flex-wrap: wrap;
 
   .contact-img {
-
-
   }
   }
 

@@ -24,17 +24,17 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
     <section class="main">
       <!--      <pre>Workers Jacket</pre>-->
       <div class="images" v-if="product.extraPhotos">
-        <img v-for="(extraPhoto,) in product.extraPhotos" :src="'../../src/assets/' + extraPhoto" alt="" />
+        <router-link :to="{name:'zoom'}" ><img v-for="(extraPhoto,) in product.extraPhotos" :src="'../../src/assets/' + extraPhoto" alt="" /></router-link>
       </div>
 
       <div class="product-information">
+        <img :src="'../../src/assets/' + product.photo" :alt="product.name"/>
         <h1>{{ product.name }}</h1>
         <a href="#">{{ product.sizes }}</a>
-
         <p>
-          <img :src="'../../src/assets/' + product.photo" :alt="product.name"/>
           {{ product.description }}
         </p>
+
       </div>
 
 
@@ -68,35 +68,39 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
   .product-information {
     //position: sticky;
     //top: 0;
-    text-align: left;
+    text-align: right;
     display: flex;
     flex-basis: 60%;
     flex-direction: column;
-    //margin: 0 10rem;
-    //max-width: 10px;
+    img {
+      width: 60%;
+      //float: right;
+      margin: 0 0 1rem 1rem;
+      //align-items: center;
+
+    }
 
     h1 {
       padding: 0 3rem 0;
       font-size: 30px;
       font-weight: bold;
+      text-align: right;
     }
 
-    img {
-      width: 40%;
-      float: right;
-      margin: 0 0 1rem 1rem;
-    }
 
     p {
-      text-align: left;
+      text-align: right;
       padding: 0 3rem 0;
+      font-size: 20px;
     }
 
     a {
-      text-align: left;
+      text-align: right;
       padding: 0 3rem 0;
       text-decoration: none;
       font-weight: bold;
+      font-size: 22px;
+      //justify-content: space-between;
     }
   }
 
@@ -108,6 +112,9 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
     .product-information {
       p {
         text-align: right;
+      }
+      a {
+        font-size: 18px;
       }
     }
   }

@@ -10,18 +10,14 @@ const data = [
             "printed logo. The jacket has a pointed collar, one vertical chest\n" +
             "pocket on the left, and two slanted side pockets near the waist.\n" +
             "The sleeves have adjustable cuffs with a single button each. The\n" +
-            "overall look is minimal and utilitarian.",
-        "extraPhotos": [
-            "collar2.jpg",
-            "collar3.jpg"
-        ]
+            "overall look is minimal and utilitarian."
     },
     {
         "id": "2",
         "name": "Worker's Jacket",
         "price": "$210",
         "photo": "jacket.png",
-        "sizes": "XS  S  M  L",
+        "sizes": "XS   S   M   L",
         "description": "This jacket has an olive green body with black sleeves, collar,\n" +
             "and hem. It features a straight, cropped silhouette and a front\n" +
             "zipper closure. On the left chest, there is a small, light gray\n" +
