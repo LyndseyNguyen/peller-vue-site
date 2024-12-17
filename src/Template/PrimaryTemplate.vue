@@ -49,9 +49,8 @@
     <footer>
       <div class="main-footer">
         <nav>
-<!--          <a href="#">Contact Us</a>-->
-          <router-link :to="{name:'contact'}" >Contact Us</router-link>
-
+          <!--          <a href="#">Contact Us</a>-->
+          <router-link :to="{name:'contact'}">Contact Us</router-link>
         </nav>
       </div>
     </footer>

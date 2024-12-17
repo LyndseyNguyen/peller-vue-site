@@ -72,6 +72,7 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
     display: flex;
     flex-basis: 60%;
     flex-direction: column;
+
     img {
       width: 60%;
       //float: right;
@@ -79,15 +80,12 @@ import PrimaryTemplate from "../../Template/PrimaryTemplate.vue";
       //align-items: center;
 
     }
-
     h1 {
       padding: 0 3rem 0;
       font-size: 30px;
       font-weight: bold;
       text-align: right;
     }
-
-
     p {
       text-align: right;
       padding: 0 3rem 0;

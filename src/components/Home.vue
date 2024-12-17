@@ -6,7 +6,7 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
   <primary-template>
     <div class="main-homepage">
       <div class="shop-link">
-        <router-link :to="{name:'category'}" >Shop Here</router-link>
+        <router-link :to="{name:'category'}">Shop Here</router-link>
       </div>
     </div>
   </primary-template>
@@ -22,7 +22,6 @@ import PrimaryTemplate from "../Template/PrimaryTemplate.vue";
   background-position: center;
 
  .shop-link {
-
    font-size: 40px;
    font-weight: lighter;
    display: flex;
